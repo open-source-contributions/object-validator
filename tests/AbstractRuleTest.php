@@ -19,7 +19,7 @@ class AbstractRuleTest extends TestCase
     /**
      * @throws \ReflectionException
      */
-    public function setUp(): void
+    protected function setUp(): void
     {
         $this->ruleClass = $this->getMockForAbstractClass(AbstractRule::class, ['AbstractValue']);
     }

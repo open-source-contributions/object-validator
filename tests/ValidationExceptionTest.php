@@ -23,8 +23,8 @@ class ValidationExceptionTest extends TestCase
     {
         $exception = new ValidationException;
 
-        $this->assertTrue(
-            is_array($exception->getErrors())
+        $this->assertIsArray(
+            $exception->getErrors()
         );
         $this->assertEmpty(
             $exception->getErrors()
